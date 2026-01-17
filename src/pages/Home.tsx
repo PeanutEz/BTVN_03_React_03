@@ -16,7 +16,7 @@ export default function Home() {
           <div className="demo-icon">📋</div>
           <h2>Todo List Demo</h2>
           <p>Explore React useState hook with a fully functional todo list application.</p>
-          <button 
+          <button
             className="nav-button btn-primary"
             onClick={() => navigate("/demo-usestate")}
           >
@@ -28,13 +28,29 @@ export default function Home() {
           <div className="demo-icon">🔗</div>
           <h2>Union Types Demo</h2>
           <p>Learn TypeScript Union Types with interactive examples and real-world use cases.</p>
-          <button 
+          <button
             className="nav-button btn-secondary"
             onClick={() => navigate("/demo-uniontypes")}
           >
             Go to Union Types Demo
           </button>
         </div>
+
+        <div className="demo-card">
+          <div className="demo-icon">🧠</div>
+          <h2>useReducer Demo</h2>
+          <p>
+            Understand React <b>useReducer</b> hook for complex state management
+            using actions and reducers.
+          </p>
+          <button
+            className="nav-button btn-tertiary"
+            onClick={() => navigate("/use-reducer")}
+          >
+            Go to useReducer Demo
+          </button>
+        </div>
+
       </div>
     </div>
   );
