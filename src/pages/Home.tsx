@@ -14,6 +14,7 @@ export default function Home() {
       </div>
 
       <div className="demo-cards">
+        {/* useState */}
         <div className="demo-card">
           <div className="demo-icon">📋</div>
           <h2>Todo List Demo</h2>
@@ -29,6 +30,7 @@ export default function Home() {
           </button>
         </div>
 
+        {/* Union Types */}
         <div className="demo-card">
           <div className="demo-icon">🔗</div>
           <h2>Union Types Demo</h2>
@@ -44,6 +46,23 @@ export default function Home() {
           </button>
         </div>
 
+        {/* Interface & Type */}
+        <div className="demo-card">
+          <div className="demo-icon">📦</div>
+          <h2>Interface & Type Demo</h2>
+          <p>
+            Explore the differences between Interface and Type in TypeScript,
+            and learn when to use each through practical examples.
+          </p>
+          <button
+            className="nav-button btn-secondary"
+            onClick={() => navigate("/demo-interfaceandtype")}
+          >
+            Go to Interface & Type Demo
+          </button>
+        </div>
+
+        {/* Enum */}
         <div className="demo-card">
           <div className="demo-icon">🧩</div>
           <h2>Enum Demo</h2>
@@ -56,6 +75,7 @@ export default function Home() {
           </button>
         </div>
 
+        {/* useEffect */}
         <div className="demo-card">
           <div className="demo-icon">⏱️</div>
           <h2>useEffect Demo</h2>
@@ -70,6 +90,7 @@ export default function Home() {
           </button>
         </div>
 
+        {/* useReducer */}
         <div className="demo-card">
           <div className="demo-icon">🧠</div>
           <h2>useReducer Demo</h2>
@@ -85,6 +106,7 @@ export default function Home() {
           </button>
         </div>
 
+        {/* useRef */}
         <div className="demo-card">
           <div className="demo-icon">📍</div>
           <h2>useRef Demo</h2>
@@ -99,6 +121,23 @@ export default function Home() {
           </button>
         </div>
 
+        {/* useMemo + useCallback */}
+        <div className="demo-card">
+          <div className="demo-icon">👽</div>
+          <h2>useMemo & useCallback Demo</h2>
+          <p>
+            Learn how to use React useMemo and useCallback hooks to optimize
+            performance.
+          </p>
+          <button
+            className="nav-button btn-primary"
+            onClick={() => navigate("/demo-usememo")}
+          >
+            Go to useMemo & useCallback Demo
+          </button>
+        </div>
+
+        {/* useContext */}
         <div className="demo-card">
           <div className="demo-icon">🌐</div>
           <h2>useContext Demo</h2>
