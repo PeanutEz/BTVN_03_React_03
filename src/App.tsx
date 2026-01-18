@@ -5,6 +5,7 @@ import EnumDemo from "./pages/Enum_Demo";
 import UseEffectDemo from "./pages/UseEffect_Demo";
 import Home from "./pages/Home";
 import UseReducer_Demo from "./pages/useReducer";
+import UseRef_Demo from "./pages/UseRef_Demo";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Route path="/demo-enum" element={<EnumDemo />} />
       <Route path="/demo-useeffect" element={<UseEffectDemo />} />
       <Route path="/use-reducer" element={<UseReducer_Demo />} />
+      <Route path="/demo-useref" element={<UseRef_Demo />} />
     </Routes>
   );
 }
