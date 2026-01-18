@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import "./Home.css";
 
 export default function Home() {
@@ -79,7 +79,7 @@ export default function Home() {
 
 
        <div className="demo-card">
-          <div className="demo-icon">🧠</div>
+          <div className="demo-icon">👨‍💻</div>
           <h2>Demo Type Annotation</h2>
           <p>
             Understand Type Annotation in TypeScript.   
