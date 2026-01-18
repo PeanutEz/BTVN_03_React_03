@@ -1,0 +1,123 @@
+.ur-wrap {
+  max-width: 860px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.ur-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.ur-title {
+  margin: 0 0 6px;
+}
+
+.ur-sub {
+  margin: 0 0 14px;
+  opacity: 0.85;
+}
+
+.ur-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ur-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.18);
+  color: inherit;
+  outline: none;
+}
+
+.ur-input:focus {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.ur-btn {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  cursor: pointer;
+}
+
+.ur-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ur-btn.ghost {
+  background: transparent;
+}
+
+.ur-btn.danger {
+  border-color: rgba(255, 70, 70, 0.35);
+}
+
+.ur-actions {
+  display: flex;
+  gap: 10px;
+  margin: 12px 0 6px;
+}
+
+.ur-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.ur-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.ur-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.ur-x {
+  border: none;
+  background: transparent;
+  color: inherit;
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.ur-x:hover {
+  opacity: 1;
+}
+
+.ur-empty {
+  margin: 12px 0 0;
+  opacity: 0.8;
+}
+
+.ur-ol {
+  margin: 10px 0 0;
+  opacity: 0.9;
+}
