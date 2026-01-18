@@ -74,6 +74,18 @@ export default function Home() {
     Go to useReducer Demo
   </button>
 </div>
+
+<div className="demo-card">
+  <div className="demo-icon">📍</div>
+  <h2>useRef Demo</h2>
+  <p>Learn how to use React useRef hook to access DOM elements directly.</p>
+  <button
+    className="nav-button btn-primary"
+    onClick={() => navigate("/demo-useref")}
+  >
+    Go to useRef Demo
+  </button>
+</div>
       </div>
     </div>
   );
