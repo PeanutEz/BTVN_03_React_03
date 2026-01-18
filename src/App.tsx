@@ -8,9 +8,8 @@ import Home from "./pages/Home";
 import TypeAnnotationDemo from "./pages/TypeAnnotation_Demo";
 import UseReducer_Demo from "./pages/useReducer";
 import UseRef_Demo from "./pages/UseRef_Demo";
+import UseContextDemo from "./features/useContextDemo/pages/UseContextDemo";
 import UseMemo_Demo from "./pages/UseMemo_Demo";
-
-
 
 function App() {
   return (
@@ -24,6 +23,7 @@ function App() {
       <Route path="/demo-useeffect" element={<UseEffectDemo />} />
       <Route path="/use-reducer" element={<UseReducer_Demo />} />
       <Route path="/demo-useref" element={<UseRef_Demo />} />
+      <Route path="/demo-usecontext" element={<UseContextDemo />} />
       <Route path="/demo-usememo" element={<UseMemo_Demo />} />
     </Routes>
   );
