@@ -37,43 +37,58 @@ export default function Home() {
         </div>
 
         <div className="demo-card">
-  <div className="demo-icon">🧩</div>
-  <h2>Enum Demo</h2>
-  <p>Demonstrate TypeScript Enum and how it works at runtime.</p>
-  <button
-    className="nav-button btn-primary"
-    onClick={() => navigate("/demo-enum")}
-  >
-    Go to Enum Demo
-  </button>
-</div>
+          <div className="demo-icon">📦</div>
+          <h2>Interface & Type Demo</h2>
+          <p>
+            Explore the differences between Interface and Type in TypeScript,
+            and learn when to use each through practical examples.
+          </p>
+          <button
+            className="nav-button btn-secondary"
+            onClick={() => navigate("/demo-interfaceandtype")}
+          >
+            Go to Interface & Type Demo
+          </button>
+        </div>
 
-<div className="demo-card">
-  <div className="demo-icon">⏱️</div>
-  <h2>useEffect Demo</h2>
-  <p>Understand React useEffect lifecycle: mount, update and cleanup.</p>
-  <button
-    className="nav-button btn-secondary"
-    onClick={() => navigate("/demo-useeffect")}
-  >
-    Go to useEffect Demo
-  </button>
-</div>
+        <div className="demo-card">
+          <div className="demo-icon">🧩</div>
+          <h2>Enum Demo</h2>
+          <p>Demonstrate TypeScript Enum and how it works at runtime.</p>
+          <button
+            className="nav-button btn-primary"
+            onClick={() => navigate("/demo-enum")}
+          >
+            Go to Enum Demo
+          </button>
+        </div>
 
-<div className="demo-card">
-  <div className="demo-icon">🧠</div>
-  <h2>useReducer Demo</h2>
-  <p>
-    Understand React <b>useReducer</b> hook for complex state management
-    using actions and reducers.
-  </p>
-  <button
-    className="nav-button btn-tertiary"
-    onClick={() => navigate("/use-reducer")}
-  >
-    Go to useReducer Demo
-  </button>
-</div>
+        <div className="demo-card">
+          <div className="demo-icon">⏱️</div>
+          <h2>useEffect Demo</h2>
+          <p>Understand React useEffect lifecycle: mount, update and cleanup.</p>
+          <button
+            className="nav-button btn-secondary"
+            onClick={() => navigate("/demo-useeffect")}
+          >
+            Go to useEffect Demo
+          </button>
+        </div>
+
+        <div className="demo-card">
+          <div className="demo-icon">🧠</div>
+          <h2>useReducer Demo</h2>
+          <p>
+            Understand React <b>useReducer</b> hook for complex state management
+            using actions and reducers.
+          </p>
+          <button
+            className="nav-button btn-tertiary"
+            onClick={() => navigate("/use-reducer")}
+          >
+            Go to useReducer Demo
+          </button>
+        </div>
 
 <div className="demo-card">
   <div className="demo-icon">📍</div>
@@ -99,6 +114,17 @@ export default function Home() {
   </button>
 </div>
 
+        <div className="demo-card">
+          <div className="demo-icon">📍</div>
+          <h2>useRef Demo</h2>
+          <p>Learn how to use React useRef hook to access DOM elements directly.</p>
+          <button
+            className="nav-button btn-primary"
+            onClick={() => navigate("/demo-useref")}
+          >
+            Go to useRef Demo
+          </button>
+        </div>
       </div>
     </div>
   );
