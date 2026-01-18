@@ -90,6 +90,30 @@ export default function Home() {
           </button>
         </div>
 
+<div className="demo-card">
+  <div className="demo-icon">📍</div>
+  <h2>useRef Demo</h2>
+  <p>Learn how to use React useRef hook to access DOM elements directly.</p>
+  <button
+    className="nav-button btn-primary"
+    onClick={() => navigate("/demo-useref")}
+  >
+    Go to useRef Demo
+  </button>
+</div>
+
+<div className="demo-card">
+  <div className="demo-icon">👽</div>
+  <h2>useMemo useCallback Demo</h2>
+  <p>Learn how to use React useMemo and useCallback hooks to optimize performance.</p>
+  <button
+    className="nav-button btn-primary"
+    onClick={() => navigate("/demo-usememo")}
+  >
+    Go to useMemo useCallback Demo
+  </button>
+</div>
+
         <div className="demo-card">
           <div className="demo-icon">📍</div>
           <h2>useRef Demo</h2>
