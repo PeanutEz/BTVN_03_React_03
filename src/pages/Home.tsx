@@ -74,10 +74,6 @@ export default function Home() {
     Go to useReducer Demo
   </button>
 </div>
-
-          </button>
-        </div>
-
       </div>
     </div>
   );
