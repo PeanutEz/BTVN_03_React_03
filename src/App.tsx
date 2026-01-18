@@ -5,6 +5,7 @@ import InterfaceAndTypeDemo from "./pages/InterfaceAndType_Demo";
 import EnumDemo from "./pages/Enum_Demo";
 import UseEffectDemo from "./pages/UseEffect_Demo";
 import Home from "./pages/Home";
+import TypeAnnotationDemo from "./pages/TypeAnnotation_Demo";
 import UseReducer_Demo from "./pages/useReducer";
 import UseRef_Demo from "./pages/UseRef_Demo";
 import UseContextDemo from "./features/useContextDemo/pages/UseContextDemo";
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/demo-usestate" element={<DemoUseState />} />
+      <Route path="/demo-type-annotation" element={<TypeAnnotationDemo />} />
       <Route path="/demo-uniontypes" element={<UnionTypesDemo />} />
       <Route path="/demo-interfaceandtype" element={<InterfaceAndTypeDemo />} />
       <Route path="/demo-enum" element={<EnumDemo />} />

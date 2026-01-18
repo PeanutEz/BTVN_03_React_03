@@ -51,8 +51,7 @@ export default function Home() {
           <div className="demo-icon">📦</div>
           <h2>Interface & Type Demo</h2>
           <p>
-            Explore the differences between Interface and Type in TypeScript,
-            and learn when to use each through practical examples.
+            Explore the differences between Interface and Type in TypeScript.
           </p>
           <button
             className="nav-button btn-secondary"
@@ -79,9 +78,7 @@ export default function Home() {
         <div className="demo-card">
           <div className="demo-icon">⏱️</div>
           <h2>useEffect Demo</h2>
-          <p>
-            Understand React useEffect lifecycle: mount, update and cleanup.
-          </p>
+          <p>Understand React useEffect lifecycle.</p>
           <button
             className="nav-button btn-secondary"
             onClick={() => navigate("/demo-useeffect")}
@@ -90,14 +87,24 @@ export default function Home() {
           </button>
         </div>
 
+        {/* Type Annotation */}
+        <div className="demo-card">
+          <div className="demo-icon">👨‍💻</div>
+          <h2>Type Annotation Demo</h2>
+          <p>Understand Type Annotation in TypeScript.</p>
+          <button
+            className="nav-button btn-tertiary"
+            onClick={() => navigate("/demo-type-annotation")}
+          >
+            Go to Type Annotation Demo
+          </button>
+        </div>
+
         {/* useReducer */}
         <div className="demo-card">
           <div className="demo-icon">🧠</div>
           <h2>useReducer Demo</h2>
-          <p>
-            Understand React <b>useReducer</b> hook for complex state management
-            using actions and reducers.
-          </p>
+          <p>Understand React useReducer hook.</p>
           <button
             className="nav-button btn-tertiary"
             onClick={() => navigate("/use-reducer")}
@@ -110,9 +117,6 @@ export default function Home() {
         <div className="demo-card">
           <div className="demo-icon">📍</div>
           <h2>useRef Demo</h2>
-          <p>
-            Learn how to use React useRef hook to access DOM elements directly.
-          </p>
           <button
             className="nav-button btn-primary"
             onClick={() => navigate("/demo-useref")}
@@ -121,19 +125,15 @@ export default function Home() {
           </button>
         </div>
 
-        {/* useMemo + useCallback */}
+        {/* useMemo */}
         <div className="demo-card">
           <div className="demo-icon">👽</div>
           <h2>useMemo & useCallback Demo</h2>
-          <p>
-            Learn how to use React useMemo and useCallback hooks to optimize
-            performance.
-          </p>
           <button
             className="nav-button btn-primary"
             onClick={() => navigate("/demo-usememo")}
           >
-            Go to useMemo & useCallback Demo
+            Go to useMemo Demo
           </button>
         </div>
 
@@ -141,10 +141,6 @@ export default function Home() {
         <div className="demo-card">
           <div className="demo-icon">🌐</div>
           <h2>useContext Demo</h2>
-          <p>
-            Master React useContext for global state management with Auth,
-            Theme, and Language switching.
-          </p>
           <button
             className="nav-button btn-secondary"
             onClick={() => navigate("/demo-usecontext")}
