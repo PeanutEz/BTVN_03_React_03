@@ -6,7 +6,7 @@ export default function TypeAnnotation_Demo() {
 //   type annotation for variable
   const [count, setCount] = useState<number>(5);
 
-  type annotaion for object
+//   type annotaion for object
   const [profile, setProfile] = useState<{ name: string; age: number }>({
     name: "Duy",
     age: 22,
@@ -24,6 +24,7 @@ export default function TypeAnnotation_Demo() {
     return `${user.name} - ${user.age}`;
   }
 
+  //type annotation for array
   const scores: number[] = [10, 20, 30];
 
   return (
