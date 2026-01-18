@@ -6,8 +6,7 @@ import UseEffectDemo from "./pages/UseEffect_Demo";
 import Home from "./pages/Home";
 import UseReducer_Demo from "./pages/useReducer";
 import UseRef_Demo from "./pages/UseRef_Demo";
-
-
+import UseContextDemo from "./features/useContextDemo/pages/UseContextDemo";
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
       <Route path="/demo-useeffect" element={<UseEffectDemo />} />
       <Route path="/use-reducer" element={<UseReducer_Demo />} />
       <Route path="/demo-useref" element={<UseRef_Demo />} />
+      <Route path="/demo-usecontext" element={<UseContextDemo />} />
     </Routes>
   );
 }
