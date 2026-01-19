@@ -148,6 +148,22 @@ export default function Home() {
             Go to useContext Demo
           </button>
         </div>
+
+        {/* Generics */}
+        <div className="demo-card">
+          <div className="demo-icon">🎯</div>
+          <h2>Generics Demo</h2>
+          <p>
+            Master TypeScript Generics with type-safe hooks, components, and API
+            responses.
+          </p>
+          <button
+            className="nav-button btn-tertiary"
+            onClick={() => navigate("/demo-generics")}
+          >
+            Go to Generics Demo
+          </button>
+        </div>
       </div>
     </div>
   );
