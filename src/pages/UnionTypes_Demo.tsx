@@ -15,12 +15,6 @@ type Shape = "circle" | "square" | "triangle";
 // 4. Union Type cho kích thước
 type Size = "small" | "medium" | "large";
 
-// 5. Union Type phức tạp - Discriminated Union
-type Notification = 
-  | { type: "success"; message: string }
-  | { type: "error"; message: string; code: number }
-  | { type: "warning"; message: string };
-
 export default function UnionTypesDemo() {
   // Demo 1: Union Type string | number
   const [inputValue, setInputValue] = useState<StringOrNumber>("");
@@ -34,9 +28,6 @@ export default function UnionTypesDemo() {
 
   // Demo 4: Union Type Size
   const [size, setSize] = useState<Size>("medium");
-
-  // Demo 5: Notification
-  const [notification, setNotification] = useState<Notification | null>(null);
 
   // Hàm xử lý input với Union Type
   const handleInputChange = (value: string) => {
@@ -77,33 +68,9 @@ export default function UnionTypesDemo() {
     }
   };
 
-  // Hàm hiển thị notification
-  const showNotification = (type: "success" | "error" | "warning") => {
-    switch (type) {
-      case "success":
-        setNotification({ type: "success", message: "Thao tác thành công!" });
-        break;
-      case "error":
-        setNotification({ type: "error", message: "Đã xảy ra lỗi!", code: 500 });
-        break;
-      case "warning":
-        setNotification({ type: "warning", message: "Cảnh báo: Hãy kiểm tra lại!" });
-        break;
-    }
-    setTimeout(() => setNotification(null), 3000);
-  };
-
   return (
     <div className="app">
       <h1>🎯 Demo Union Types trong TypeScript</h1>
-      
-      {/* Notification */}
-      {notification && (
-        <div className={`notification ${notification.type}`}>
-          <strong>{notification.type.toUpperCase()}</strong>: {notification.message}
-          {notification.type === "error" && <span> (Code: {notification.code})</span>}
-        </div>
-      )}
 
       {/* Demo 1: String | Number */}
       <section className="demo-section">
@@ -183,28 +150,6 @@ export default function UnionTypesDemo() {
           </div>
           <div className="shape-container">
             {renderShape()}
-          </div>
-        </div>
-      </section>
-
-      {/* Demo 4: Discriminated Union */}
-      <section className="demo-section">
-        <h2>4️⃣ Discriminated Union (Union Type phức tạp)</h2>
-        <pre>{`type Notification = 
-  | { type: "success"; message: string }
-  | { type: "error"; message: string; code: number }
-  | { type: "warning"; message: string };`}</pre>
-        <div className="demo-content">
-          <div className="button-group">
-            <button className="success-btn" onClick={() => showNotification("success")}>
-              ✅ Success
-            </button>
-            <button className="error-btn" onClick={() => showNotification("error")}>
-              ❌ Error (có code)
-            </button>
-            <button className="warning-btn" onClick={() => showNotification("warning")}>
-              ⚠️ Warning
-            </button>
           </div>
         </div>
       </section>
