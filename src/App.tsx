@@ -10,6 +10,7 @@ import UseReducer_Demo from "./pages/useReducer";
 import UseRef_Demo from "./pages/UseRef_Demo";
 import UseContextDemo from "./features/useContextDemo/pages/UseContextDemo";
 import UseMemo_Demo from "./pages/UseMemo_Demo";
+import GenericsDemo from "./features/genericsDemo/pages/GenericsDemo";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path="/demo-useref" element={<UseRef_Demo />} />
       <Route path="/demo-usecontext" element={<UseContextDemo />} />
       <Route path="/demo-usememo" element={<UseMemo_Demo />} />
+      <Route path="/demo-generics" element={<GenericsDemo />} />
     </Routes>
   );
 }
