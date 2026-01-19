@@ -12,10 +12,7 @@ type Status = "pending" | "in-progress" | "completed" | "cancelled";
 // 3. Union Type cho hình dạng (Shape)
 type Shape = "circle" | "square" | "triangle";
 
-// 4. Union Type cho theme
-type Theme = "light" | "dark";
-
-// 5. Union Type cho kích thước
+// 4. Union Type cho kích thước
 type Size = "small" | "medium" | "large";
 
 // 6. Union Type phức tạp - Discriminated Union
@@ -35,10 +32,7 @@ export default function UnionTypesDemo() {
   // Demo 3: Union Type Shape
   const [shape, setShape] = useState<Shape>("circle");
 
-  // Demo 4: Union Type Theme
-  const [theme, setTheme] = useState<Theme>("light");
-
-  // Demo 5: Union Type Size
+  // Demo 4: Union Type Size
   const [size, setSize] = useState<Size>("medium");
 
   // Demo 6: Notification
@@ -100,7 +94,7 @@ export default function UnionTypesDemo() {
   };
 
   return (
-    <div className={`app ${theme}`}>
+    <div className="app">
       <h1>🎯 Demo Union Types trong TypeScript</h1>
       
       {/* Notification */}
@@ -193,25 +187,9 @@ export default function UnionTypesDemo() {
         </div>
       </section>
 
-      {/* Demo 4: Theme */}
+      {/* Demo 5: Discriminated Union */}
       <section className="demo-section">
-        <h2>4️⃣ Union Type: Theme</h2>
-        <code>type Theme = "light" | "dark";</code>
-        <div className="demo-content">
-          <div className="button-group">
-            <button className={theme === "light" ? "active" : ""} onClick={() => setTheme("light")}>
-              ☀️ Light
-            </button>
-            <button className={theme === "dark" ? "active" : ""} onClick={() => setTheme("dark")}>
-              🌙 Dark
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Demo 6: Discriminated Union */}
-      <section className="demo-section">
-        <h2>5️⃣ Discriminated Union (Union Type phức tạp)</h2>
+        <h2>4️⃣ Discriminated Union (Union Type phức tạp)</h2>
         <pre>{`type Notification = 
   | { type: "success"; message: string }
   | { type: "error"; message: string; code: number }
