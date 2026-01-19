@@ -79,9 +79,6 @@ function UseRef_Demo() {
                 <p><strong>State count:</strong> {displayData.count}</p>
                 <p><strong>countRef.current:</strong> {displayData.countRef}</p>
                 <p><strong>objRef.current:</strong> {JSON.stringify(displayData.obj)}</p>
-                <p><strong>textRef.current:</strong> {displayData.textRef}</p>
-                <p><strong>numberRef.current:</strong> {displayData.numberRef}</p>
-                <p><strong>timerRef.current:</strong> {displayData.timerRef}</p>
             </div>
 
             <div style={{ padding: '20px', border: '1px solid #007bff', borderRadius: '5px', backgroundColor: '#e3f2fd' }}>
