@@ -150,33 +150,6 @@ button.active {
   color: #fff;
 }
 
-.success-btn {
-  border-color: #28a745;
-  color: #28a745;
-}
-.success-btn:hover {
-  background: #28a745;
-  color: #fff;
-}
-
-.error-btn {
-  border-color: #dc3545;
-  color: #dc3545;
-}
-.error-btn:hover {
-  background: #dc3545;
-  color: #fff;
-}
-
-.warning-btn {
-  border-color: #ffc107;
-  color: #856404;
-}
-.warning-btn:hover {
-  background: #ffc107;
-  color: #000;
-}
-
 /* Radio group */
 .radio-group {
   display: flex;
@@ -257,32 +230,6 @@ input[type="number"]:focus {
   width: 0;
   height: 0;
   background: transparent;
-}
-
-/* Notification */
-.notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 12px 20px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 14px;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.notification.success {
-  background: #28a745;
-}
-
-.notification.error {
-  background: #dc3545;
-}
-
-.notification.warning {
-  background: #ffc107;
-  color: #000;
 }
 
 /* Footer */
