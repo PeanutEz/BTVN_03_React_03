@@ -189,7 +189,7 @@ export default function UnionTypesDemo() {
 
       {/* Demo 5: Discriminated Union */}
       <section className="demo-section">
-        <h2>4️⃣ Discriminated Union (Union Type phức tạp)</h2>
+        <h2>5️⃣ Discriminated Union (Union Type phức tạp)</h2>
         <pre>{`type Notification = 
   | { type: "success"; message: string }
   | { type: "error"; message: string; code: number }
