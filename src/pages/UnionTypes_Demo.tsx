@@ -15,7 +15,7 @@ type Shape = "circle" | "square" | "triangle";
 // 4. Union Type cho kích thước
 type Size = "small" | "medium" | "large";
 
-// 6. Union Type phức tạp - Discriminated Union
+// 5. Union Type phức tạp - Discriminated Union
 type Notification = 
   | { type: "success"; message: string }
   | { type: "error"; message: string; code: number }
@@ -35,7 +35,7 @@ export default function UnionTypesDemo() {
   // Demo 4: Union Type Size
   const [size, setSize] = useState<Size>("medium");
 
-  // Demo 6: Notification
+  // Demo 5: Notification
   const [notification, setNotification] = useState<Notification | null>(null);
 
   // Hàm xử lý input với Union Type
@@ -187,9 +187,9 @@ export default function UnionTypesDemo() {
         </div>
       </section>
 
-      {/* Demo 5: Discriminated Union */}
+      {/* Demo 4: Discriminated Union */}
       <section className="demo-section">
-        <h2>5️⃣ Discriminated Union (Union Type phức tạp)</h2>
+        <h2>4️⃣ Discriminated Union (Union Type phức tạp)</h2>
         <pre>{`type Notification = 
   | { type: "success"; message: string }
   | { type: "error"; message: string; code: number }
